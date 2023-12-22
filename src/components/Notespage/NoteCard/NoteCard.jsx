@@ -27,6 +27,7 @@ import { useRef, useState } from "react";
 
 export default function NoteCard({ title, body, user, _id }) {
   const dispatch = useDispatch();
+  // eslint-disable-next-line no-unused-vars
   const [notes, setNotes] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
 

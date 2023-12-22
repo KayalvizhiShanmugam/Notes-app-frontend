@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 export default function NotesPage() {
   const dispatch = useDispatch();
-  const { loading, error, data } = useSelector((state) => state.noteReducer);
+  const { data } = useSelector((state) => state.noteReducer);
   console.log(data);
   const [notes, setNotes] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -28,7 +28,7 @@ export default function NotesPage() {
 
   useEffect(() => {
     dispatch(getNotes());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     setNotes(data);

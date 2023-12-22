@@ -4,7 +4,6 @@ import {
     FormControl,
     FormLabel,
     Input,
-    Checkbox,
     Stack,
     Link,
     Button,
@@ -14,10 +13,8 @@ import {
   } from '@chakra-ui/react';
 import axios from "axios";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "../constants/config";
-import { getUser } from "../Redux/users/user.actions";
 
 export default function SignupPage(){
     const nav = useNavigate()
@@ -30,6 +27,7 @@ export default function SignupPage(){
             name,email,password
         })
         let  {message,status} = data.data
+        // eslint-disable-next-line eqeqeq
         if(status==1){
             alert(message)
             nav("/login")

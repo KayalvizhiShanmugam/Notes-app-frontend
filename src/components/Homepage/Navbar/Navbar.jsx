@@ -1,8 +1,11 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-vars */
 import { ReactNode } from 'react';
 import {
   Box,
   Flex,
   Avatar,
+  // eslint-disable-next-line no-unused-vars
   Link,
   Button,
   Menu,
@@ -11,6 +14,7 @@ import {
   MenuItem,
   MenuDivider,
   useDisclosure,
+  // eslint-disable-next-line no-unused-vars
   useColorModeValue,
   Stack,
   useColorMode,

@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import axios from "axios"
 import { BASE_URL } from "../../constants/config"
 import { LOGIN_USER_ERROR, LOGIN_USER_LOADING, LOGIN_USER_SUCCESS } from "./user.types"

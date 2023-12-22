@@ -1,5 +1,4 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
-import { Navbar } from "../components/Homepage/Navbar";
 import note from "../assets/note.png";
 
 export default function Homepage() {
