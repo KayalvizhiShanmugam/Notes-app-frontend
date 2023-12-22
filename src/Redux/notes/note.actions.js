@@ -14,7 +14,7 @@ export const getNotes=()=>async(dispatch)=>{
     dispatch({type:GET_NOTES_LOADING})
     try {
         
-        const res= await axios(BASE_URL+"/note",{
+        const res= await axios("https://notes-app-backend-yz5v.onrender.com//note",{
             method:"get",
             headers:{
                 Authorization:token
@@ -49,7 +49,7 @@ export const createNotes=(obj)=>async(dispatch)=>{
     dispatch({type:CREATE_NOTES_LOADING})
     try {
         
-        const res= await axios(BASE_URL+"/note/create",{
+        const res= await axios("https://notes-app-backend-yz5v.onrender.com//note/create",{
             method:"post",
             data:obj,
             headers:{
@@ -87,7 +87,7 @@ export const deleteNotes=(id)=>async(dispatch)=>{
     dispatch({type:DELETE_NOTES_LOADING})
     try {
         
-        const res= await axios(BASE_URL+"/note/",{
+        const res= await axios("https://notes-app-backend-yz5v.onrender.com//note/",{
             method:"delete",
             headers:{
                 Authorization:token,
@@ -126,7 +126,7 @@ export const updateNotes=(id,obj)=>async(dispatch)=>{
     dispatch({type:UPDATE_NOTES_LOADING})
     try {
         
-        const res= await axios(BASE_URL+"/note",{
+        const res= await axios("https://notes-app-backend-yz5v.onrender.com//note",{
             method:"patch",
             data:obj,
             headers:{
